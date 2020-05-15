@@ -1,0 +1,27 @@
+[package]
+name = "keyvault-agent"
+version = "0.1.0-alpha"
+authors = ["Jeff Simmer <jeff@jeffsimmer.com>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+anyhow = "1.0" # Error handling
+base64 = "0.12"
+byteorder = "1.1"
+clap = "3.0.0-beta.1" # Command line parsing
+colored = "1.9" # Terminal coloring
+daemonize = "0.4"
+dirs = "2.0"
+futures = "0.3"
+libc = "0.2"
+nix = "0.17"
+openssl = "0.10"
+rpassword = "4.0"
+serde = "1.0"
+serde_yaml = "0.8"
+ssh-agent = "0.2.2"
+tokio = { version = "*", features = ["process"] }
+keyvault-agent-azure-auth = "0.1.0-alpha"
+keyvault-agent-azure-key-vault-keys = "0.1.0-alpha"
