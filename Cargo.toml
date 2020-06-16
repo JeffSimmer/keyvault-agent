@@ -1,10 +1,15 @@
 [package]
 name = "keyvault-agent"
+description = "ssh-agent backed by Azure Key Vault keys"
+repository = "https://github.com/JeffSimmer/keyvault-agent"
 version = "0.1.0-alpha"
 authors = ["Jeff Simmer <jeff@jeffsimmer.com>"]
 edition = "2018"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
+
+[badges]
+maintenance = { status = "experimental" }
 
 [dependencies]
 anyhow = "1.0" # Error handling
@@ -22,6 +27,6 @@ rpassword = "4.0"
 serde = "1.0"
 serde_yaml = "0.8"
 ssh-agent = "0.2.2"
-tokio = { version = "*", features = ["process"] }
+tokio = { version = "0.2", features = ["process"] }
 keyvault-agent-azure-auth = "0.1.0-alpha"
 keyvault-agent-azure-key-vault-keys = "0.1.0-alpha"
